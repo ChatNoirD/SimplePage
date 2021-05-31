@@ -8,6 +8,8 @@ window.onscroll = function() {
     $mobileMenu.classList.remove('activeMenu');
 }
 
+// Выпадающее меню закрывается при скроле
+
 const $arrLeft = document.querySelector("#arrowLeft");
 const $arrRight = document.querySelector("#arrowRight");
 const $slides = document.querySelectorAll(".sliderItem");
