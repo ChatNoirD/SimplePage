@@ -123,7 +123,7 @@ main {
     font-style: italic;
 }
 .mainPic {
-    width: 70%;
+    width: 50%;
 }
 footer {
     margin: 0 auto;
@@ -167,6 +167,9 @@ footer {
     }
     .headerMenu_desktop {
         display: none;
+    }
+    .mainPic {
+        max-width: 400px;
     }
 }
 @media (min-width: 768px) {
@@ -241,21 +244,35 @@ footer {
         width: 100%;
     }
     .fa-arrow-left, .fa-arrow-right {
-        font-size: 20px;
-        line-height: 35px;
+        font-size: 30px;
+        line-height: 45px;
         font-weight: 600;
         position: absolute;
-        top: 50%;
+        top: 0;
+        margin-top: 30%;
+        color: #ffffff;
+        text-shadow: 0 2px 5px;
     }
     .fa-arrow-right {
-        right: 10px;
+        right: 20px;
     }
     .fa-arrow-left {
-        left: 10px;
+        left: 20px;
     }
     .slideDisappear {
         position: absolute;
         top: 0;
         left: -100%;
+    }
+}
+@media (min-width: 1921px) {
+    .headerContainer {
+        width: 1920px;
+    }
+    .mainContainer {
+        width: 1920px;
+    }
+    .footerContainer {
+        width: 1920px;
     }
 }
