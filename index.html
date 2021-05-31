@@ -1,52 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../FontAwesome/css/all.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="headerContainer">
-            <div class="siteLogo">
-                <h1>Sitelogo</h1>
-            </div>
-            <div class="headerMenu_mobile">
-                <i class="fas fa-bars"></i>
-                <nav class="headerMenu">
-                    <ul class="headerMenu_list">
-                        <li class="headerLinkItem"><a href="#" class="headerLink">Link</a></li>
-                        <li class="headerLinkItem middle"><a href="#" class="headerLink">Link</a></li>
-                        <li class="headerLinkItem"><a href="#" class="headerLink">Link</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../FontAwesome/css/all.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="headerContainer">
+                <div class="siteLogo">
+                    <h1>Sitelogo</h1>
+                </div>
+                <div class="headerMenu_mobile">
+                    <i id="burger" class="fas fa-bars"></i>
+                    <nav id="burgerMenu" class="headerMenu">
+                        <ul class="headerMenu_list">
+                            <li class="headerLinkItem"><a href="#" class="headerLink">Link</a></li>
+                            <li class="headerLinkItem middle"><a href="#" class="headerLink">Link</a></li>
+                            <li class="headerLinkItem"><a href="#" class="headerLink">Link</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="headerMenu_desktop">
+                    <ul class="headerMenu_list_desktop">
+                        <li class="headerLinkItem_desktop"><a href="#" class="headerLink">Link</a></li>
+                        <li class="headerLinkItem_desktop"><a href="#" class="headerLink">Link</a></li>
+                        <li class="headerLinkItem_desktop"><a href="#" class="headerLink">Link</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="sliderContainer"></div>
-        <div class="mainContainer">
-            <section class="mainInfo_textArea">
-                <h2 class="textHeader">
-                    Text hedaer
-                </h2>
-                <p class="mainInfo_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus officiis commodi nemo similique, exercitationem omnis quam consectetur? In voluptate sapiente alias minima necessitatibus qui, dolorem eum delectus molestias exercitationem.
-                </p>
-                <p class="mainInfo_text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, quisquam praesentium? Cupiditate dignissimos distinctio, deleniti id quo velit neque numquam qui. Impedit beatae obcaecati quos eveniet neque soluta possimus vel!
-                </p>
-            </section>
-            <img class="mainPic" src="images/infoImage.jpg" alt="Pirture of business conversation" />
-        </div>
-    </main>
-    <footer>
-        <address class="contacts">
-            <a class="contactsLink" href="mailto:address@serv.com">address@serv.com</a>
-            <a class="contactsLink" href="tel:+00000000000">+0(000)000 00 00</a>
-        </address>
-    </footer>
-</body>
+        </header>
+        <main>
+            <div class="sliderContainer">
+                <div class="slider">
+                    <div class="sliderItem active">
+                        <img class="sliderPic" src="images/pic1.jpeg" />
+                    </div>
+                    <div class="sliderItem">
+                        <img class="sliderPic" src="images/pic2.jpg" />
+                    </div>
+                    <div class="sliderItem">
+                        <img class="sliderPic" src="images/pic3.jpg" />
+                    </div>
+                    <span><i id="arrowLeft" class="fas fa-arrow-left"></i></span>
+                    <span><i id="arrowRight" class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="mainContainer">
+                <section class="mainInfo_textArea">
+                    <h2 class="textHeader">
+                        Text hedaer
+                    </h2>
+                    <p class="mainInfo_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas temporibus officiis commodi nemo similique, exercitationem omnis quam consectetur? In voluptate sapiente alias minima necessitatibus qui, dolorem eum delectus molestias exercitationem.
+                    </p>
+                    <p class="mainInfo_text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, quisquam praesentium? Cupiditate dignissimos distinctio, deleniti id quo velit neque numquam qui. Impedit beatae obcaecati quos eveniet neque soluta possimus vel!
+                    </p>
+                </section>
+                <img class="mainPic" src="images/infoImage.jpg" alt="Pirture of business conversation" />
+            </div>
+        </main>
+        <footer>
+            <address class="contacts">
+                <h3 class="contactUs">Contact Us</h3>
+                <a class="contactsLink" href="mailto:address@serv.com">address@serv.com</a>
+                <a class="contactsLink" href="tel:+00000000000">+0(000)000 00 00</a>
+            </address>
+        </footer>
+    </body>
+    <script src="main.js"></script>
 </html>
