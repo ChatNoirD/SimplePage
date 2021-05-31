@@ -1,0 +1,139 @@
+body {
+    margin: 0 auto;
+}
+header {
+    margin: 0 auto;
+    background-color: #5c96c5;
+}
+.headerContainer {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.siteLogo {
+    width: 25%;
+    cursor: default;
+}
+h1 {
+    font-size: 100%;
+    line-height: 100%;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.headerMenu_mobile {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.fa-bars {
+    font-size: 100%;
+    line-height: 100%;
+    font-weight: 600;
+    color: #ffffff;
+}
+.fa-bars:hover {
+    text-shadow: 0 0 5px;
+}
+.headerMenu_list {
+    width: 100px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+.headerLinkItem {
+    width: 100%;
+    text-align: center;
+}
+.middle {
+    width: 100%;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.headerLink {
+    width: 100%;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;    
+}
+.headerLink:hover {
+    text-shadow: 0 0 5px;
+}
+.headerMenu {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #5c96c5;
+    display: none;
+}
+main {
+    width: 320px;
+    margin: 0 auto;
+}
+.sliderContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+.mainContainer {
+    width: 320px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainInfo_textArea {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.textHeader {
+    margin: 0;
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.mainInfo_text {
+    margin: 0;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+.mainPic {
+    width: 80%;
+}
+footer {
+    margin: 0 auto;
+    background-color: #5c96c5;
+}
+.contacts {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactsLink {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
