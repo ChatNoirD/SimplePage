@@ -92,11 +92,11 @@ main {
 }
 .mainContainer {
     width: 320px;
-    height: 500px;
+    height: 700px;
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .mainInfo_textArea {
@@ -104,26 +104,26 @@ main {
     height: 40%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .textHeader {
     margin: 0;
     justify-self: flex-start;
     align-self: flex-start;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 100%;
+    line-height: 100%;
     font-weight: 600;
 }
 .mainInfo_text {
     margin: 0;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 100%;
+    line-height: 100%;
     font-weight: 400;
     font-style: italic;
 }
 .mainPic {
-    width: 50%;
+    width: 80%;
 }
 footer {
     margin: 0 auto;
@@ -165,11 +165,19 @@ footer {
     .mainContainer {
         width: 100%;
     }
+    .mainInfo_textArea {
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     .headerMenu_desktop {
         display: none;
     }
     .mainPic {
-        max-width: 400px;
+        max-width: 80%;
     }
 }
 @media (min-width: 768px) {
@@ -216,6 +224,14 @@ footer {
         display: flex;
         flex-flow: column nowrap;
     }
+    .textHeader {
+        margin: 0;
+        justify-self: flex-start;
+        align-self: flex-start;
+        font-size: 100%;
+        line-height: 100%;
+        font-weight: 600;
+    }
     .mainInfo_text {
         margin: 0;
         font-size: 100%;
@@ -244,13 +260,14 @@ footer {
         width: 100%;
     }
     .fa-arrow-left, .fa-arrow-right {
-        font-size: 30px;
-        line-height: 45px;
+        cursor: pointer;
+        font-size: 50px;
+        line-height: 75px;
         font-weight: 600;
         position: absolute;
         top: 0;
         margin-top: 30%;
-        color: #ffffff;
+        color: #5c96c5;
         text-shadow: 0 2px 5px;
     }
     .fa-arrow-right {

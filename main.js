@@ -1,10 +1,11 @@
 const $burger = document.querySelector('#burger');
 const $mobileMenu = document.querySelector('#burgerMenu');
+const $mainBlock = document.querySelector('main');
 
 $burger.onclick = function() {
     $mobileMenu.classList.add('activeMenu');
 }
-window.onscroll = function() {
+$mainBlock.onclick = function() {
     $mobileMenu.classList.remove('activeMenu');
 }
 
