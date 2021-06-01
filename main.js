@@ -9,7 +9,7 @@ $mainBlock.onclick = function() {
     $mobileMenu.classList.remove('activeMenu');
 }
 
-// Выпадающее меню закрывается при скроле
+// Выпадающее меню закрывается при клике  любом месте мейна
 
 const $arrLeft = document.querySelector("#arrowLeft");
 const $arrRight = document.querySelector("#arrowRight");

@@ -92,7 +92,7 @@ main {
 }
 .mainContainer {
     width: 320px;
-    height: 700px;
+    height: 700px; /* Высота 100vh для body не сработала. Поставил фиксированную у main */
     margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
