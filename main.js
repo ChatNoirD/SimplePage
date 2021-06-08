@@ -2,14 +2,28 @@ const $burger = document.querySelector('#burger');
 const $mobileMenu = document.querySelector('#burgerMenu');
 const $mainBlock = document.querySelector('main');
 
-$burger.onclick = function() {
-    $mobileMenu.classList.add('activeMenu');
-}
-$mainBlock.onclick = function() {
-    $mobileMenu.classList.remove('activeMenu');
-}
+$burger.addEventListener('click', function() {
+    if (this) {
+        $mobileMenu.classList.add('activeMenu');
+    }
+});
+$burger.removeEventListener('click', function() {
+    if (this) {
+        $mobileMenu.classList.add('activeMenu');
+    }
+});
+document.addEventListener('scroll', function(event) {
+    if (event.type) {
+        $mobileMenu.classList.remove('activeMenu');
+    }
+});
+document.removeEventListener('scroll', function(event) {
+    if (event.type) {
+        $mobileMenu.classList.remove('activeMenu');
+    }
+});
 
-// Выпадающее меню закрывается при клике  любом месте мейна
+// Выпадающее меню закрывается при скролле
 
 const $arrLeft = document.querySelector("#arrowLeft");
 const $arrRight = document.querySelector("#arrowRight");

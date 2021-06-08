@@ -40,7 +40,7 @@ h1 {
     text-shadow: 0 0 5px;
 }
 .headerMenu_list {
-    width: 100px;
+    width: 132px;
     margin: 0;
     list-style: none;
     display: flex;
@@ -72,7 +72,7 @@ h1 {
 .headerMenu {
     position: absolute;
     top: 25px;
-    right: 0;
+    right: -55px;
     background-color: #5c96c5;
     display: none;
 }
